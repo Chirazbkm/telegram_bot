@@ -1,0 +1,3 @@
+# requirements.txt
+playwright==1.40.0
+python-telegram-bot==20.6

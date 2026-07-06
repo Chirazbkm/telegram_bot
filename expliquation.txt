@@ -1,0 +1,20 @@
+Comment fonctionne exactement le bot ?
+Le bot fait 3 choses en continu :
+
+🔄 Vérification automatique toutes les 5 minutes
+Le bot va sur le site CROUS (avec l'URL que tu as configurée)
+
+Il récupère tous les logements normands disponibles
+
+Il compare avec la liste des logements déjà notifiés (stockée dans seen_logements.json)
+
+Si un logement est nouveau → il t'envoie une notification Telegram
+
+Si un logement est déjà dans la liste → il l'ignore
+
+💬 Commandes Telegram
+/check : Vérification manuelle immédiate (utile pour tester)
+
+/status : Voir combien de logements ont déjà été notifiés
+
+/all : Voir la liste complète de TOUS les logements normands (même ceux déjà vus)
